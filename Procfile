@@ -1,2 +1,2 @@
-web: gunicorn CodeHUb.wsgi
+web: python app.py
 
