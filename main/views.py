@@ -34,6 +34,7 @@ class ListOrdersAPIView(APIView):
         order_ids = [order.id for order in orders]
         return Response({'orders_ids': order_ids}, status=status.HTTP_200_OK)
 
+commit be27cb394078c7359da6349d7fd849d36ae2f81c
 
 class OrderDetailAPIView(RetrieveAPIView):
         queryset = Order.objects.all()
