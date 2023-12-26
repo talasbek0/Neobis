@@ -16,7 +16,7 @@ class Products(models.Model):
     image = models.ImageField()
 
     def __str__(self):
-        return self.name
+        return f'{self.name}'
 
 
 class Order(models.Model):
